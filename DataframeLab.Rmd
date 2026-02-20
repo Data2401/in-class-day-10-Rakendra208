@@ -1,6 +1,6 @@
 ---
 title: "Dataframes - In Class lab"
-author: "Dr. Shoemaker"
+author: "Rakendra Sah"
 date: "DATA 2401"
 output: html_document
 ---
@@ -31,14 +31,14 @@ Because you're in an RProject, you don't need to set your working directory in R
 
 ```{r}
 
-
+glimpse()
 ```
 
 
 - Create a variable `org` that contains the `organization` column of the dataset
 
 ```{r}
-
+org <- grants$organization
 
 ```
 
@@ -46,7 +46,7 @@ Because you're in an RProject, you don't need to set your working directory in R
 - Confirm that the "organization" column is a vector using the `is.vector()` function. (This is a useful debugging tip if you hit errors later!)
 
 ```{r}
-
+is.vector(org)
 
 ```
 
@@ -56,7 +56,7 @@ Now you can ask some interesting questions about the dataset:
 - What was the mean grant value?
 
 ```{r}
-
+mean(grant_amount)
 ```
 
 
